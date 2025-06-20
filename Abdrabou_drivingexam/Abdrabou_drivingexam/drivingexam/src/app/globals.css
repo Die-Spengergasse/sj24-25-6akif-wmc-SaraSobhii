@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+
+:root {
+  --background: #f9fafb;
+  --foreground: #111827;
+  --card-bg: #ffffff;
+  --card-border: #e5e7eb;
+  --link: #ffffff;
+  --link-hover: #09daff;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #e96969;
+    --foreground: #f3f4f6;
+    --card-bg: #1f2937;
+    --card-border: #374151;
+    --link: #ffffff;
+    --link-hover: #fa9d12;
+  }
+}
+
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+a {
+  color: var(--link);
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.btn-module {
+  background-color: #3beaf6; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-module:hover {
+  background-color: #2563eb;
+}
+
+/* Simulation Button */
+.btn-exam {
+  background-color: #a31690; 
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.btn-exam:hover {
+  background-color: #15803d;
+}
